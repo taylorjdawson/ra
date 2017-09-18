@@ -20,12 +20,12 @@
 }
 
 /*TODO: Something about this*/
-@media screen and (min-width: 480px) {
-    .header-img {
-        background-position-x: 1%;
-        background-position-y: 1%;
-    }
-}
+/*@media screen and (min-width: 480px) {*/
+    /*.header-img {*/
+        /*background-position-x: 1%;*/
+        /*background-position-y: 1%;*/
+    /*}*/
+/*}*/
 .header-text {
     margin-top: 40vh;
     /*display: table-cell;*/
