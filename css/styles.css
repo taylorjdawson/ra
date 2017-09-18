@@ -17,14 +17,20 @@
     background-position-x: -156px;
     filter: blur(1px);
 }
+@media screen and (max-width: 375px) {
+    .header-img {
+        background-size: 337%;
+        background-position-x: -205px;
+    }
+}
+@media screen and (min-width: 426px) {
+    .header-img {
+        background-size: 214%;
+        background-position-x: -190px;
+    }
+}
 
-/*TODO: Something about this*/
-/*@media screen and (min-width: 480px) {*/
-    /*.header-img {*/
-        /*background-position-x: 1%;*/
-        /*background-position-y: 1%;*/
-    /*}*/
-/*}*/
+
 .header-text {
     margin-top: 40vh;
     /*display: table-cell;*/
@@ -84,7 +90,7 @@ footer {
 }
 .container-flex {
     display: flex; /* or inline-flex */
-    flex-direction:  column;
+    flex-flow: column;
 }
 
 /*TODO: Change the brightness not to effect the text*/
@@ -97,6 +103,15 @@ footer {
     margin: auto;  /* Magic! */
     filter: brightness(73%);
     -webkit-filter: brightness(73%);
+}
+/*TODO: Something about this*/
+@media screen and (min-width: 480px) {
+    .container-flex {
+        flex-flow: row wrap;
+    }
+    .item {
+        flex: 1 0 50%;
+    }
 }
 .item-text {
 }
